@@ -27,7 +27,7 @@ def how_are_you_callback(hermes, intent_message):
 
 def feeling_good_callback(hermes, intent_message):
     session_id = intent_message.session_id
-    response = "That's awesome! I'm happy to hear that."
+    response = "Das ist jawundervollfürdich du Schifffahrtskapitän"
     hermes.publish_end_session(session_id, response)
 
 
