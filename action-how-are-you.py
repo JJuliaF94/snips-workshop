@@ -49,13 +49,13 @@ def how_are_you_callback(hermes, intent_message):
 
 def feeling_good_callback(hermes, intent_message):
     session_id = intent_message.session_id
-    response = "That's awesome! Do you want to hear a joke? What do you call a sheep with no head and no legs? A cloud. HI HI HI funny funny funny"
+    response = "That's awesome! Do you want to hear a joke? What do you call a sheep with no head and no legs? A cloud. HIHI HIHI funny funny funny"
     hermes.publish_end_session(session_id, response)
 
 
 def feeling_bad_callback(hermes, intent_message):
     session_id = intent_message.session_id
-    response = "Sorry to hear that. Do you want to hear a joke? What do you call a computer that sings? A Dell. Do you feel better? If not. Bad luck. HI HI HI funny funny funny"
+    response = "Sorry to hear that. Do you want to hear a joke? What do you call a computer that sings? A Dell. Do you feel better? If not. Bad luck. HIHI HIHI funny funny funny"
     hermes.publish_end_session(session_id, response)
 
 
