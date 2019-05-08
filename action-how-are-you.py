@@ -1,6 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 from hermes_python.hermes import Hermes
+from random import choice
 
 INTENT_HOW_ARE_YOU = "JJuliaF94:how_are_you"
 
@@ -12,8 +13,9 @@ def main():
 
 
 def how_are_you_callback(hermes, intent_message):
+    answers = ["bad", "I hate my life", "give me a window", "i love you", "life is wonderful", "i am a duck"]
     session_id = intent_message.session_id
-    response = "I'm doing great."
+    response = choice(answers)
     hermes.publish_end_session(session_id, response)
 
 
