@@ -41,21 +41,21 @@ def how_are_you_callback(hermes, intent_message):
     if temp >= float(config["secret"]["temperature_threshold"]):
         response = "I'm feeling great! "
     else:
-        response = "Not so good. "
-    response += "It's {} degrees in {}. How are you?".format(temp, config["secret"]["city"])
+        response = "I hate my life. Its fucking too hot "
+    response += "It's {} degrees in {}. I dont care but I'll ask you even though. How are you?".format(temp, config["secret"]["city"])
 
     hermes.publish_continue_session(session_id, response, INTENT_FILTER_FEELING)
 
 
 def feeling_good_callback(hermes, intent_message):
     session_id = intent_message.session_id
-    response = "That's awesome! Do you want to hear a joke? What do you call a sheep with no hat and no legs? A cloud. HAAHAA HAAHAA HAAHAA YEEAAAH"
+    response = "That's awesome! Do you want to hear a joke? What do you call a sheep with no head and no legs? A cloud. HIHIHI funny funny funny"
     hermes.publish_end_session(session_id, response)
 
 
 def feeling_bad_callback(hermes, intent_message):
     session_id = intent_message.session_id
-    response = "Sorry to hear that. Do you want to hear a joke? What do you call a computer that sings? A Dell. Do you feel better? If not. Bad luck. HAHA HAHA HAHA YEAAH"
+    response = "Sorry to hear that. Do you want to hear a joke? What do you call a computer that sings? A Dell. Do you feel better? If not. Bad luck. HIHIHI funny funny funny"
     hermes.publish_end_session(session_id, response)
 
 
