@@ -49,19 +49,19 @@ def how_are_you_callback(hermes, intent_message):
 
 def feeling_good_callback(hermes, intent_message):
     session_id = intent_message.session_id
-    response = "That's awesome! I'm happy to hear that."
+    response = "That's awesome! Do you want to hear a joke? What do you call a sheep with no hat and no legs? A cloud. HAHAHAHHAHA"
     hermes.publish_end_session(session_id, response)
 
 
 def feeling_bad_callback(hermes, intent_message):
     session_id = intent_message.session_id
-    response = "Sorry to hear that. I hope you feel better soon."
+    response = "Sorry to hear that. Do you want to hear a joke? What do you call a computer that sings? A-Dell. Do you feel better? If not I can give you a knife to make that shit what you call your life an end.HAHAHAHHAH"
     hermes.publish_end_session(session_id, response)
 
 
 def feeling_alright_callback(hermes, intent_message):
     session_id = intent_message.session_id
-    response = "That's cool."
+    response = "That's cool. I dont care. Dont talk to me ever again. I dont like you. By by you durk"
     hermes.publish_end_session(session_id, response)
 
 
