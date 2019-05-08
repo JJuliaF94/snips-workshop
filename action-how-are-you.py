@@ -55,7 +55,7 @@ def feeling_good_callback(hermes, intent_message):
 
 def feeling_bad_callback(hermes, intent_message):
     session_id = intent_message.session_id
-    response = "Sorry to hear that. Do you want to hear a joke? What do you call a computer that sings? A-Dell. Do you feel better? If not I can give you a knife to make that shit what you call your life an end.HAHA HAHA HAHA YEAAH"
+    response = "Sorry to hear that. Do you want to hear a joke? What do you call a computer that sings? A Dell. Do you feel better? If not I can give you a knife to make that shit what you call your life an end. HAHA HAHA HAHA YEAAH"
     hermes.publish_end_session(session_id, response)
 
 
